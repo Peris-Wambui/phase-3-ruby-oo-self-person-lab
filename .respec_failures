@@ -1,0 +1,48 @@
+Person initialization and attributes .new a new person is instantiated with a name
+Person initialization and attributes #name returns the name the person was initialized with
+Person initialization and attributes #name= a new person instance cannot overwrite the name they were instantiated with
+Person initialization and attributes #bank_account a new person instance is initialized with a bank_account balance of $25
+Person initialization and attributes #bank_account= allows a person to change their bank account amount
+Person initialization and attributes #happiness a new person instance is initialized with a happiness of 8
+Person initialization and attributes #happiness= allows a person to change their happiness
+Person initialization and attributes #happiness= does not allow a person to change their happiness above 10
+Person initialization and attributes #happiness= does not allow a person to change their happiness below 0
+Person initialization and attributes #hygiene a new person instance is initialized with a hygiene of 8
+Person initialization and attributes #hygiene= allows a person to change their hygiene
+Person initialization and attributes #hygiene= does not allow a person to change their hygiene above 10
+Person initialization and attributes #hygiene= does not allow a person to change their hygiene below 0
+Person non-attribute instance methods #happy? returns true if happiness is greater than seven, else false
+Person non-attribute instance methods #happy? returns false if happiness is not greater than seven
+Person non-attribute instance methods #clean? returns true if hygiene is greater than seven
+Person non-attribute instance methods #clean? returns false if hygiene is not greater than seven
+Person non-attribute instance methods #get_paid accepts an argument of amount
+Person non-attribute instance methods #get_paid increments bank_account by the amount
+Person non-attribute instance methods #get_paid returns "all about the benjamins"
+Person non-attribute instance methods #take_bath makes the person cleaner by 4 points
+Person non-attribute instance methods #take_bath returns a song
+Person non-attribute instance methods #take_bath can't make a person cleaner by 10 points (hint: use the custom #hygiene= method)
+Person non-attribute instance methods #take_bath calls on the #hygiene= method to increment hygiene
+Person non-attribute instance methods #work_out makes the person dirtier by 3 points
+Person non-attribute instance methods #work_out never makes the person have negative dirty points (hint: use the #hygiene= method)
+Person non-attribute instance methods #work_out calls on the #hygiene= method to decrease hygiene
+Person non-attribute instance methods #work_out makes the person happier by 2 points
+Person non-attribute instance methods #work_out never makes the person have more than 10 happiness points (hint: use the #happiness= method)
+Person non-attribute instance methods #work_out calls on the #happiness= method to increment happiness
+Person non-attribute instance methods #work_out returns Queen lyrics
+Person non-attribute instance methods #call_friend accepts one argument, an instance of the Person class
+Person non-attribute instance methods #call_friend makes the person calling happier by three points
+Person non-attribute instance methods #call_friend makes the friend happier by three points
+Person non-attribute instance methods #call_friend never makes the happiness of either party exceed 10 (hint: use the custom #happiness= method)
+Person non-attribute instance methods #call_friend calls on the #happiness= method to increment happiness
+Person non-attribute instance methods #call_friend returns a string that reflects the caller's side of the conversation
+Person non-attribute instance methods #start_conversation accepts two arguments, a person to strike a convo with and a topic
+Person non-attribute instance methods #start_conversation with topic: politics returns 'blah blah partisan blah lobbyist' if the topic is politics
+Person non-attribute instance methods #start_conversation with topic: politics if topic is politics, it makes both people in the convo two points less happy
+Person non-attribute instance methods #start_conversation with topic: politics never makes either party less than 0 points happy (never negative) (hint: use your #happiness= method)
+Person non-attribute instance methods #start_conversation with topic: politics calls on the #happiness= method
+Person non-attribute instance methods #start_conversation with topic: weather returns 'blah blah sun blah rain' if the topic is weather
+Person non-attribute instance methods #start_conversation with topic: weather if topic is weather, it makes both people in the convo one point more happy
+Person non-attribute instance methods #start_conversation with topic: weather never makes either party more than 10 points happy (hint: use your #happiness= method)
+Person non-attribute instance methods #start_conversation with topic: weather calls on the #happiness= method
+Person non-attribute instance methods #start_conversation with topic: other returns 'blah blah blah blah blah' if the topic is not politics or weather
+Person non-attribute instance methods #start_conversation with topic: other if topic is not politics or weather, it doesn't affect happiness
